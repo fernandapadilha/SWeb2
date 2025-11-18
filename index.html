@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Página Servidor Web02-1829-1711</title>
+	<script>
+    	function exibirDataHora() {
+        	let agora = new Date();
+        	let dataHora = agora.toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "medium" });
+        	document.getElementById("dataHora").innerText = "Data e Hora do Acesso: " + dataHora;
+    	}
+	</script>
+</head>
+<body style="background-color:#ff7fbf
+" onload="exibirDataHora()">
+<center>
+<img src="/imagens/frajola.png">
+<h1>Seja bem-vindo a página local SWeb02</h1><br>
+<h1> SWeb02 -  Renata-1711 Vitória-1829  </h1>  
+<h2 id="dataHora"></h2>  
+</center>
+</body>
+</html>
+
+<style>
+    img {
+        height: 20rem;
+        width: 20rem;
+    }
+</style>
